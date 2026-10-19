@@ -1,0 +1,35 @@
+[package]
+name = "litemail_core"
+version = "1.0.0"
+edition = "2024"
+
+[lib]
+crate-type = ["lib", "staticlib", "cdylib"]
+
+[[bin]]
+name = "uniffi-bindgen"
+path = "src/bin/uniffi-bindgen.rs"
+
+[dependencies]
+security-framework = "3.7.0"
+async-imap = { version = "0.12.0", default-features = false, features = ["runtime-tokio"] }
+base64 = "0.23.1"
+chrono = "0.4.45"
+futures = "0.3.34"
+lettre = { version = "0.11.23", default-features = false, features = ["builder", "smtp-transport", "tokio1", "tokio1-native-tls", "hostname"] }
+mail-parser = { version = "0.11.9", features = ["full_encoding"] }
+rusqlite = { version = "0.40.2", features = ["bundled"] }
+thiserror = "2.0.21"
+tokio = { version = "1.53.3", features = ["rt-multi-thread", "net", "time", "sync", "macros", "io-util"] }
+tokio-native-tls = "0.3.1"
+uniffi = { version = "0.32.2", features = ["cli"] }
+
+[dev-dependencies]
+tempfile = "3.27.0"
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+strip = true
+panic = "unwind"

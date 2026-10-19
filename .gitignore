@@ -1,0 +1,8 @@
+build/
+.testserver/
+core/target/
+app/.build/
+app/.swiftpm/
+app/Frameworks/
+app/Sources/LiteMailCore/litemail_core.swift
+.DS_Store
