@@ -1,12 +1,5 @@
 <p align="center">
-  <img src="docs/images/icon.png" width="128" height="128" alt="LiteMail icon">
-</p>
-
-<h1 align="center">LiteMail</h1>
-
-<p align="center">
-  <b>A light, native mail app for macOS.</b><br>
-  Keeps exactly the last N days of mail on your Mac — and still finds everything else.
+  <img src="docs/images/hero.png" width="100%" alt="LiteMail — a light, native mail app for macOS. Keeps the last N days on your Mac and still finds everything else.">
 </p>
 
 <p align="center">
@@ -17,21 +10,16 @@
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-141413?style=flat-square"></a>
 </p>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/images/dark.png">
-    <img src="docs/images/light.png" width="880" alt="LiteMail: sidebar, message list and reading pane">
-  </picture>
-</p>
-
----
-
 ## Why LiteMail
 
 Most mail apps either download your whole mailbox or keep nothing offline. LiteMail does one
 thing differently: **you choose a window — 7, 30, 90 days, a year, everything, or any number of
 days — and your Mac keeps every message and attachment inside it**, readable and searchable
 offline. Everything older stays on the server, one search away.
+
+<p align="center">
+  <img src="docs/images/horizon.png" width="100%" alt="The last 30 days live on your Mac; everything older stays on the server and is found by search, opened in memory, never saved.">
+</p>
 
 ## Features
 
@@ -65,6 +53,14 @@ offline. Everything older stays on the server, one search away.
 - **The little things.** Unified inbox, smart Unread and Flagged mailboxes, reply all without
   copying yourself, signatures, drag-and-drop attachments, notifications and Dock badge,
   default `mailto:` handler.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/images/dark.png">
+    <img src="docs/images/light.png" width="100%" alt="LiteMail: sidebar, message list and reading pane, in light or dark to match your GitHub theme">
+  </picture>
+  <br><sub>Light or dark, following your Mac — this picture follows your GitHub theme</sub>
+</p>
 
 <table>
   <tr>
@@ -133,6 +129,7 @@ LiteMail collects no data. See [PRIVACY.md](PRIVACY.md).
 ## License
 
 [MIT](LICENSE). Source Serif 4 is © Adobe, under the SIL Open Font License.
+The interface and the graphics on this page were designed in Claude Design.
 
 ---
 
